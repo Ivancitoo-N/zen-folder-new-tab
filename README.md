@@ -16,8 +16,9 @@ activa.
 
 ## Estado
 
-Probado contra **Zen 1.24.3b** (Firefox 159) inspeccionando el código interno
-instalado (`#zenFolderActions`, `gZenFolders`, `BrowserCommands.openTab`).
+Probado e instalado contra **Zen 1.24.3b** (Firefox 159) inspeccionando el
+código interno (`#zenFolderActions`, `gZenFolders`, `BrowserCommands.openTab`).
+La carga real se verifica con la preferencia `zen-folder-new-tab.loaded=true`.
 Usa APIs internas de Zen, así que una actualización del navegador podría
 requerir ajustes.
 
@@ -29,25 +30,13 @@ de mods (ese solo aplica CSS). Tienes dos opciones:
 ### Opción A: Sine (recomendada)
 
 1. Instala [Sine](https://github.com/CosmoCreeper/Sine/releases/latest) en Zen.
-2. El `theme.json` ya apunta a `Ivancitoo-N/zen-folder-new-tab`. Para publicarlo
-   tú mismo desde esta carpeta:
-
-   ```powershell
-   git init
-   git add .
-   git commit -m "Initial version"
-   git remote add origin https://github.com/Ivancitoo-N/zen-folder-new-tab.git
-   git push -u origin main
-   ```
-
-   (En esta máquina no hay `git`/`gh` autenticado, así que la instalación local
-   se hizo registrando el mod directamente en Sine; no hace falta publicarlo
-   para que funcione.)
+2. El mod ya está publicado en `Ivancitoo-N/zen-folder-new-tab`.
 3. En Zen: **Ajustes → Sine Mods**, activa `sine.allow-unsafe-js` (los scripts
    de repositorios personalizados no se ejecutan sin esto). Ya quedó activado
    en tu perfil.
-4. Si algún día publicas el repo, Sine puede instalarlo desde
-   `Ivancitoo-N/zen-folder-new-tab`.
+4. En el instalador de repositorios personalizados escribe
+   `Ivancitoo-N/zen-folder-new-tab` e instala. También puedes instalarlo desde
+   la rama: `Ivancitoo-N/zen-folder-new-tab/tree/main`.
 5. Reinicia Zen si Sine lo pide.
 
 ### Opción B: fx-autoconfig (sin Sine)
