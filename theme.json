@@ -1,0 +1,20 @@
+{
+  "id": "zen-folder-new-tab",
+  "name": "Folder New Tab",
+  "description": "Añade «Nueva pestaña» al menú contextual de una carpeta y crea la pestaña dentro de esa carpeta.",
+  "author": "Ivann",
+  "homepage": "https://github.com/Ivancitoo-N/zen-folder-new-tab",
+  "readme": "https://raw.githubusercontent.com/Ivancitoo-N/zen-folder-new-tab/main/README.md",
+  "tags": ["Zen Browser", "Tab Folders", "Context Menu", "New Tab"],
+  "version": "1.0.0",
+  "createdAt": "2026-11-25",
+  "updatedAt": "2026-11-25T00:00:00Z",
+  "fork": ["zen"],
+  "ai": "yes",
+  "scripts": {
+    "folder-new-tab.uc.js": {
+      "include": ["chrome://browser/content/browser.xhtml"]
+    }
+  },
+  "supportsUnload": true
+}
